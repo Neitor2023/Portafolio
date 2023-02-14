@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Romy</a>
+            </div>
+            <nav id="nav" class="responsive">
+            <!-- <nav id="nav"> -->
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i> 
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>ROMY GARCIA</h1>
+            <h2>Técnico Superior Universitario en Informatica</h2>
+            <h2>Programador Web Full-Stack</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/romy-garcia-espinoza-870a82265/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://stackoverflow.com/users/21207303/romy-garcia-espinoza" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+                <a href="https://instagram.com/neitorfullstack?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.reddit.com/user/RomyGarcia" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
+                <a href="https://github.com/Neitor2023" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://app.netlify.com/user/settings#profile" target="_blank"><i class='bx bxl-netlify bx-rotate-270'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIOB SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span><br/><br/></p>
+            <div class="fila">
+                <!-- DATOS PERSONALES -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-05-1973
+                        </li>
+                        <li>
+                            <strong>Teléfonos</strong>
+                            +593-096-329-1299
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            neitorme@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            170521 Calle Fray Gaspar de Carvajal N27-29 Quito Ecuador
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- INTERESES -->
+                <div class="col">
+                    <H3>Intereses</H3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <span>BICICLETA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>                
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <BUtton>
+                <a href="Docs/Romy-Garcia-CV.pdf" download >
+                Descargar CV <i class="fa-solid fa-download"></i> </a>
+                <span class="overlay"></span>
+            </BUtton>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Technical Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="skill">
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-brands fa-html5"></i> HTML</span>
+                            </div>
+                        </div>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            </div>
+                        </div>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-brands fa-square-js"></i> JAVASCRIPT</span>
+                            </div>
+                        </div>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-brands fa-react"></i> REACT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- <h3>Professional Skills</h3> -->
+                    <div class="skill">
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-brands fa-node-js"></i> NODE.JS</span>
+                            </div>
+                        </div>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-solid fa-database"></i> BACKEND</span>
+                            </div>
+                        </div>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-brands fa-python"></i> PYTHON</span>
+                            </div>
+                        </div>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span class="titulo"><i class="fa-solid fa-sitemap"></i> ALGORITMOS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- SECCION SKILLS -2- -->    
+    <section id="skills2" class="skills2">
+        <div class="contenido-seccion2">
+            <h2>Professional Skills</h2>
+            <div class="fila2">
+                <div class="col2">
+                    <div class="skill2">
+                        <div class="barra-skill2">
+                            <div class="progreso2">
+                                <span class="titulo2"><i class="fa-solid fa-comments"></i> Comunicación</span>
+                            </div>
+                        </div>
+                        <div class="barra-skill2">
+                            <div class="progreso2">
+                                <span class="titulo2"><i class="fa-solid fa-people-carry-box"></i> Equipo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="skill2">
+                        <div class="barra-skill2">
+                            <div class="progreso2">
+                                <span class="titulo2"><i class="fa-solid fa-person-circle-check"></i> Creatividad</span>
+                            </div>                            
+                        </div>
+                        <div class="skill2">
+                            <div class="barra-skill2">
+                                <div class="progreso2">
+                                    <span class="titulo2"><i class="fa-solid fa-keyboard"></i> Dedicación</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <!-- <h4>Arte y Multimedia</h4> -->
+                        <h4>IUTAJS Instituto Universitario de Tecnología Antonio José de Sucre Venezuela</h4>
+                        <span class="casa">TECNICO SUPERIOR UNIVERSITARIO EN INFORMATICA</span>
+                        <span class="fecha">06/11/1997</span>
+                        <div class="conectori">
+                            <div class="circuloi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ACADEMLO, INC Escuela de Programación en Línea</h4>
+                        <span class="casa">Desarrollo Web Full-Stack y Ciencias de la Computación 100% en línea</span>
+                        <span class="fecha">01/01/2023 - 31/05/2023</span>
+                        <h4>Contenido Programatico:</h4>
+                        <ul class="contenidoAcadenlo">
+                            <li>
+                                <strong>1.- Fundamentos de Desarrollo Web</strong>
+                            </li>
+                            <p>Aprendí a maquetar un sitio web usando HTML con una comprensión significativa de cada etiqueta, para hacerlo atractivo visualmente con CSS. También me familiaricé con Javascript, adquiriendo conocimientos sobre conceptos como los tipos de datos, métodos, y funciones y buenas prácticas de codificación.</p>
+                            <strong>Profesora: Alejandra Olazagasti</strong>
+                            <li>
+                                <strong>2.- Programación con Javascript Avanzado</strong>
+                            </li>
+                            <p>Aprendí los conceptos básicos de Javascript, como callbacks, closures y callstack, y su funcionalidad asíncrona. Comprendí cómo Javascript se relaciona con la web y cómo los navegadores se comunican con mi página. También entendí el propósito de Javascript en la web.</p>
+                            <strong>Profesora: Alejandra Olazagasti</strong>
+                            </li>
+                            <li>
+                                <strong>3.- Desarrollo de Aplicaciones Web</strong>
+                            </li>
+                            <p>Desarrollé soluciones completas de front-end usando herramientas como React. Esto me permitió interactuar con el DOM, optimizar y reutilizar código con componentes, manejar el estado de mi aplicación, trabajar con eventos y formularios, y autenticarme con un servidor.</p>
+                            <li>
+                                <strong>4.- Programación Backend con Node.js</strong>
+                            </li>
+                            <p>Aprendí cómo conectar el back end y el front end usando HTTP y sus métodos, y cree mi propia API usando el patrón MVC con Node y Express. También entendí cómo Node se conecta con una base de datos relacional para procesar información usando un ORM Sequelize.</p>
+                            <li>
+                                <strong>5.- Backend avanzado y Bases de datos</strong>
+                            </li>
+                            <p>Realicé pruebas unitarias con Jest para validar mi código. Me familiaricé con diferentes formas de autenticación para mi API, como JWT y OAuth, y cree mis propios middlewares para la seguridad de la información. También aprendí a crear y enviar correos electrónicos, así como a procesar pagos. Finalmente documenté mi API para que la pudiera compartir con mi equipo.</p>
+                            <li>
+                                <strong>6.- Otros</strong>
+                            </li>
+                            <p>Python y Django / Django avanzado - Construyendo mi API REST / Introducción a algoritmos y estructuras de datos básicas / Algoritmos de búsqueda y ordenamiento de Árboles y Grafos</p>
+                        <div class="conectori">
+                            <div class="circuloi">
+                            </div>
+                        </div>
+                    </div>                     
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>C.A. Hidrológica del Centro, HIDROCENTRO Venezuela</h4>
+                        <span class="casa">OPERADOR TECNICO Departamento CCO Centro de Control Operativo</span>
+                        <span class="fecha">06/08/2001 - 15/05/2018</span>
+                        <p>En este cargo, administré la distribución del servicio del agua a través de sistemas automatizados, comandados a distancia. También coordinaba las tareas del personal de guardia, gestionaba estadísticas e informes para la toma de decisiones, atendía a los clientes para la solución de problemas en el servicio del agua y procuraba solucionarlas lo antes posible.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>INSTITUTO UNIVERSITARIO POLITECNICO “SANTIAGO MARIÑO” Venezuela</h4>
+                        <span class="casa">COORDINADOR DE INFORMATICA</span>
+                        <span class="fecha">25/11/1997 - 13/09/1999</span>
+                        <p>Automatizé con Foxpro 2.6 para Window los procesos administrativos de control de estudio, caja, parte de contabilidad, recursos humanos y control de acceso de los alumnos solventes a la institución. Instalé nuevas redes y equipos de computación, preste soporte técnico y reparación de equipos, realicé informes de fin de año de presupuesto y ejecución presupuestada.</p>
+                        <div class="conectord">
+                            <div class="circulod">
+                            </div>
+                        </div>
+                    </div>                                            
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Web</h3>
+                        <p>Carrito de compra</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Web</h3>
+                        <p>Proyecto No. 2</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Web</h3>
+                        <p>Proyecto No. 3</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Web</h3>
+                        <p>Proyecto No. 4</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Web</h3>
+                        <p>Proyecto No. 5</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Web</h3>
+                        <p>Proyecto No. 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <form class="col" action="https://formspree.io/f/mrgvpyew" method="post">
+                    <label for="email">Correo</label>
+                    <input id="email" name="Email" type="email"  required placeholder="Escribe aqui tu dirreción de correo">
+                    <label for="message">Mensaje</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                    <button type="submit">Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/Ubicación.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ecuador, Quito, Calle Fray Gaspar de Carvajal N27-29
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Telefono: +593-096-329-1299
+                            </li>
+                            <li>
+                                <i id="mail" href="mailto:neitorme@gmail.com" class="fa-solid fa-envelope"></i>
+                                Email: neitorme@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/romy-garcia-espinoza-870a82265/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://stackoverflow.com/users/21207303/romy-garcia-espinoza" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+            <a href="https://instagram.com/neitorfullstack?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.reddit.com/user/RomyGarcia" target="_blank"><i class="fa-brands fa-reddit-alien"></i></a>
+            <a href="https://github.com/Neitor2023" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://app.netlify.com/user/settings#profile" target="_blank"><i class='bx bxl-netlify bx-rotate-270'></i></a>
+        </div>        
+    </footer>
+    <script>
+        // const formulario = document.querySelector('#form')
+        // const sendForm = document.querySelector('#mail')
+
+        // formulario.addEventListener('submit', handleSubmit)
+
+        // function handleSubmit(e) {
+        //     e.preventDefault()
+        //     const form = new FormData(this)
+        //     sendForm.setAttribute('href', `mailto:neitorme@gmail.com?subject=${form.get('name')} - ${form.get('subject')}&body=${form.get('mensaje')}`)
+        //     sendForm.click()
+        // }
+
+
+        const btnEnvio = document.getElementById('enviarCorreo');
+        btnEnvio.addEventListener('click', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const telefono = document.getElementById('telefono').value;
+            const email = document.getElementById('email').value;
+            const tema = document.getElementById('tema').value;
+            const mensaje = document.getElementById('mensaje').value; 
+            window.location.href=`mailto:neitorme@gmail.com?subject=envioDesdeFormulario&body=Nombre%3A${name}%0ATelefono%3A${telefono}%0ACorreo%3A${email}%0AAsunto%3A${tema}%0AMensaje%3A${tema}`
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
